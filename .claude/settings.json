@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(python --version)",
+      "PowerShell(python -c \"import pygame; print\\('pygame', pygame.version.ver\\)\" 2>&1)",
+      "Read(//c/Python/**)",
+      "PowerShell(& C:\\\\Python\\\\3.12.10\\\\python.exe --version)",
+      "PowerShell(& C:\\\\Python\\\\3.12.10\\\\python.exe -c \"import pygame; print\\('pygame', pygame.version.ver\\)\" 2>&1)",
+      "PowerShell(& C:\\\\Python\\\\3.12.10\\\\python.exe -m pip install pygame-ce 2>&1)",
+      "PowerShell($env:SDL_VIDEODRIVER='dummy'; & C:\\\\Python\\\\3.12.10\\\\python.exe -c \"import pygame, config as cfg, main; pygame.init\\(\\); s=pygame.display.set_mode\\(\\(cfg.WIDTH,cfg.HEIGHT\\)\\); main.draw_grid\\(s,5,5,18,228\\); print\\('1단계 OK: init/set_mode/draw_grid 정상'\\); pygame.quit\\(\\)\")",
+      "PowerShell(& C:\\\\Python\\\\3.12.10\\\\python.exe tools/generate_levels.py)",
+      "PowerShell(& 'C:\\\\Python\\\\3.10.0\\\\python.exe' \"$env:USERPROFILE\\\\.claude\\\\skills\\\\export-chat\\\\export_chat.py\" --find \"장애물에 막혔을때 애니메이션이 부족해\" --with-tools --out .)"
+    ]
+  }
+}
